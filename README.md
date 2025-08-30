@@ -1,6 +1,6 @@
 # JA→EN Real-Time Desktop Audio Translator
 
-This script captures desktop audio on Linux (PulseAudio or PipeWire) and translates Japanese speech to English in real time in the terminal.
+Captures desktop audio on Linux (PulseAudio or PipeWire) and translates Japanese speech to English in real time in the terminal.
 
 ## Features
 - Fully offline translation using Whisper/faster-whisper
