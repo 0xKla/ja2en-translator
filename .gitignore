@@ -1,0 +1,12 @@
+# Python virtual environment
+venv/
+ja2en-rt/
+
+# Bytecode / cache
+__pycache__/
+*.pyc
+
+# Temp files
+*.wav
+*.log
+
