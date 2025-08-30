@@ -21,6 +21,9 @@ sudo pacman -Syu nvidia nvidia-utils cuda cudnn
 nvidia-smi
 ls /usr/lib/libcudnn*
 
+# Run the script
+./ja2en2.py --device cuda --compute-type float16 --model small
+
 # If you don’t have a GPU or want a simpler setup, force CPU mode:
 ./ja2en_.py --device cpu --compute-type int8 --model small
 ```
