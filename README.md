@@ -4,7 +4,7 @@ Captures desktop audio on Linux (PulseAudio or PipeWire) and translates Japanese
 
 ## Features
 - Fully local translation using Whisper/faster-whisper
-- Supports GPU (CUDA + cuDNN) or CPU-only
+- Supports GPU (CUDA) or CPU-only
 - Optional bilingual display (original Japanese + English)
 - All in the terminal
 
