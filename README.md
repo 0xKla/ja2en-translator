@@ -22,8 +22,6 @@ source any2en/bin/activate
 # Install Python dependencies
 pip install -r requirements.txt
 
-## -h or --help for options and usage
-=======
 # Make script executable
 chmod +x any2en.py
 ```
