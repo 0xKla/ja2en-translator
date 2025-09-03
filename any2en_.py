@@ -21,7 +21,7 @@ from rich.panel import Panel
 
 console = Console()
 
-# Supported languages mapping (ISO 639-1 -> full name)
+# Supported languages
 SUPPORTED_LANGUAGES = {
     "auto": "Auto-detect",
     "zh": "Chinese",
@@ -223,7 +223,7 @@ class AudioTranslator:
             if source_lang == "auto":
                 detected_lang, confidence = self.detect_language(audio_path)
                 
-                # Cache frequently detected languages (only non-English)
+                # Cache frequently detected languages
                 if detected_lang != "en" and confidence > 0.3:
                     self.detected_lang_cache[detected_lang] = self.detected_lang_cache.get(detected_lang, 0) + 1
                 
@@ -240,7 +240,7 @@ class AudioTranslator:
                 detected_lang = source_lang
                 confidence = 1.0
 
-            # Get original text (transcription)
+            # Get original text
             segments_orig, _ = self.model.transcribe(
                 audio_path,
                 language=source_lang if source_lang != "auto" else None,
